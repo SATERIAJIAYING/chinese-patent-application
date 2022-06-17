@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\pagestyle{empty}
+\usepackage{ctex}
+\usepackage{setspace}
+\usepackage{float}
+\usepackage{makecell}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{array}
+\usepackage[margin=1in]{geometry}%设置边距，符合Word设定
+
+\begin{document}
+
+\begin{center}
+\fontsize{22pt}{0}\textbf{课程考试成绩单}
+
+~
+
+\fontsize{22pt}{0}\textbf{（试卷封面）}
+\end{center}
+
+\begin{table}[htb]
+	\centering
+	\renewcommand{\arraystretch}{1.5} % 调节行高倍数
+	%\setlength{\tabcolsep}{4mm}{ %调节表格总体宽度
+	\begin{tabular}{|c|ccccc|}
+		\hline
+		院系&生物科学与医学工程学院&\multicolumn{1}{|c|}{专业}&\multicolumn{3}{c|}{生物信息学}\\
+		\hline
+		学生姓名&XXXX&\multicolumn{1}{|c|}{学号}&\multicolumn{3}{c|}{11XXXXXX}\\
+		\hline
+		课程名称&\multicolumn{5}{|c|}{科技读写（研讨）}\\
+		\hline
+		授课时间&9-16周，星期一6-7节、星期五9-16节&\multicolumn{1}{|c|}{周学时}&4&\multicolumn{1}{|c|}{学分}&2\\
+		\hline
+		\makecell[c]{\\~\\~\\~\\~\\~\\~\\简\\要\\评\\语\\~\\~\\~\\~\\~\\~}&\multicolumn{5}{|l|}{\makecell[l]{
+			%评语写这里,用\\换行
+		}}\\
+		\hline
+		考核论题&\multicolumn{5}{|l|}{\makecell[l]{
+			%论题写这里,用\\换行
+			XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+		}}\\
+		\hline
+		\makecell[c]{总评成绩\\（含平时成绩）}&\multicolumn{5}{|l|}{\makecell[l]{
+			%成绩写这里,用\\换行
+		}}\\
+		\hline
+		\makecell[c]{~\\备注\\~}&\multicolumn{5}{|l|}{\makecell[l]{
+			%备注写这里,用\\换行
+		}}\\
+		\hline
+	\end{tabular}%}
+\end{table}
+
+~
+
+~
+
+~
+
+\hspace{8cm}任课教师签名：
+
+\hspace{8cm}日期：\today
+\end{document}
